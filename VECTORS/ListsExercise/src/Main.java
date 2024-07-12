@@ -32,22 +32,18 @@ public class Main {
         for(Employee e : employeeList){
             if(e.id!=raiseId){
                 System.out.println("This id does not exist!");
+                System.out.println();
             }else{
                 System.out.println("Enter the percentage: ");
                 double percentage = sc.nextDouble();
                 e.salary = ((percentage/100)*e.getSalary())  + e.getSalary();
-                System.out.println(e.salary);
             }
-
         }
 
         System.out.println("List of Employees: ");
         for(Employee e : employeeList){
             System.out.println(e.toString());
         }
-
-
-
 
 sc.close();
 
