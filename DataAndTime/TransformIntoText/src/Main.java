@@ -1,9 +1,7 @@
 import javax.xml.crypto.Data;
-import java.time.Instant;
-import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.time.ZoneId;
+import java.time.*;
 import java.time.format.DateTimeFormatter;
+import java.time.temporal.ChronoUnit;
 
 public class Main {
     public static void main(String[] args) {
@@ -43,5 +41,34 @@ public class Main {
         System.out.println(d01.getDayOfMonth());
         System.out.println(d02.getMonthValue());
 
+        //date and time are imutable
+        // we have to create a new object after the first creation
+
+        // Previous week
+        LocalDate previousWeekLocalDate = d01.minusWeeks(1);
+        System.out.println(previousWeekLocalDate);
+
+        //next week, but adding days
+        LocalDate nextWeekLocalDate = d01.plusDays(7);
+        System.out.println(nextWeekLocalDate);
+
+        LocalDateTime nextHourLocalDateTime = d02.plusHours(2);
+        System.out.println(nextHourLocalDateTime);
+
+        LocalDateTime nextWeekLocalDateTime = d02.plusDays(7);
+
+
+        Instant nextSeconds = d03.plus(7, ChronoUnit.DAYS);
+        System.out.println(nextSeconds);
+
+        Duration t1 = Duration.between(nextWeekLocalDateTime, d02);
+        System.out.println(t1.toDays());
+
+        // we have to use atTime to use hours and minutes or atStartOfDay
+        Duration t2 = Duration.between(nextWeekLocalDate.atStartOfDay(), d01.atTime(0,0));
+        System.out.println(t2.toDays());
+
+        Duration t3 = Duration.between(nextSeconds, d03);
+        System.out.println(t3.toDays());
         }
 }
