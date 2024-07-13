@@ -29,5 +29,19 @@ public class Main {
         System.out.println(d02.format(fmt2));
         System.out.println(fmt3.format(d03));
         System.out.println(fmt4.format(d02));
-    }
+
+        //convert global to local
+        //we need to inform the Time Zone
+
+        LocalDate r1 = LocalDate.ofInstant(d03, ZoneId.systemDefault());
+        LocalDate r2 = LocalDate.ofInstant(d03, ZoneId.of("Brazil/West"));
+        LocalDateTime r3 = LocalDateTime.ofInstant(d03, ZoneId.of("America/Chicago"));
+
+        System.out.println(r1);
+        System.out.println(r2);
+        System.out.println(r3);
+        System.out.println(d01.getDayOfMonth());
+        System.out.println(d02.getMonthValue());
+
+        }
 }
