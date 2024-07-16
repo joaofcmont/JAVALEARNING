@@ -1,18 +1,19 @@
 # JAVALEARNING
 
 
-<h2> This is what i used to relearn JAVA an do some cool Java Projects also :) </h2>
+## This is what i used to relearn JAVA an do some cool Java Projects also :) 
 
-<h3>Percurso de formação</h3>
---> Lógica de Programação ✅
+### Percurso de formação
+#### Lógica de Programação ✅
+
       Algoritmos usando Java  (iniciante)
       Conceitos de programação
       Estrutura sequencial
       Estrutura condicional
       Estruturas repetitivas
 
---> Java e Programação Orientada a Objetos (Almost finished)
-(PARTE 1)
+#### Java e Programação Orientada a Objetos (PARTE 1)⚠️
+
       Introdução à Programação Orientada a Objetos
       Construtores, palavra this, sobrecarga, encapsulamento
       Comportamento de memória, arrays, listas
@@ -22,14 +23,15 @@
       Herança e polimorfismo
       Tratamento de exceções
 
-PROJETO
---> Sistema jogo de xadrez
+## PROJETO
+### Sistema jogo de xadrez 
+ 
       Composição de objetos, herança, coleções, etc.
       Desenvolvimento em camadas
       Padrões de projetos
 
---> Java e Programação Orientada a Objetos
-(PARTE 2)
+#### Java e Programação Orientada a Objetos (PARTE 2)
+
       Programação Funcional(lambda)
       Trabalhando com arquivos
       Interfaces
@@ -39,8 +41,8 @@ PROJETO
       Interface Gráfica com JavaFX
       Acesso a banco de dados com JDBC
       
-PROJETO
---> Aplicação desktop com JavaFX e banco de dados MySQL com JDBC
+## PROJETO
+### Aplicação desktop com JavaFX e banco de dados MySQL com JDBC
       Padrão MVC - Model View Controller
       FXML, SceneBuilder
       Tratamento de eventos de UI
@@ -48,8 +50,8 @@ PROJETO
       Padrão Camadas
       CRUD completo
       
-PROJETO
---> Web services com Spring Boot e JPA / Hibernate
+## PROJETO
+### Web services com Spring Boot e JPA / Hibernate
     Padrão camadas
     Web e HTTP
     REST / web services
@@ -62,8 +64,8 @@ PROJETO
     Tratamento de exceções
 
     
-PROJETO
---> Web services com Spring Boot e NoSQL (MongoDB)
+## PROJETO
+### Web services com Spring Boot e NoSQL (MongoDB)
     BÔNUS - Nivelamento NoSQL e MongoDB
     Modelo de domínio: agregados e desnormalização
     Spring Data MongoDB
