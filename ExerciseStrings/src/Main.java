@@ -1,5 +1,9 @@
+import org.junit.Test;
+
 import javax.crypto.spec.ChaCha20ParameterSpec;
 import java.util.Scanner;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class Main {
     public static void main(String[] args) {
@@ -29,5 +33,12 @@ public class Main {
         }
         return result.toString();
 
+    }
+
+    @Test
+    public void testValidStrings() {
+        assertEquals("JaVaScRiPt",upndown("javascript"));
+        assertEquals("HeLlO", upndown("hello"));
+        assertEquals("ExAmPlE", upndown("example"));
     }
 }
