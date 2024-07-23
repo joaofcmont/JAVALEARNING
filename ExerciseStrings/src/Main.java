@@ -13,8 +13,7 @@ public class Main {
     }
 
 
-    public static String upndown(String s) {
-
+    public static String upndown(String s) throws IllegalArgumentException{
         StringBuilder result = new StringBuilder();
         boolean upper = true;
 
