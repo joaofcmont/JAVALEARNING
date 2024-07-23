@@ -33,11 +33,9 @@ public class Main {
         } catch (InputMismatchException e){
             System.out.println("Input error");
         }finally{
-
+            System.out.println("*****Método 2 END****");
+            sc.close();
         }
 
-        System.out.println("*****Método 2 END****");
-
-        sc.close();
     }
 }
