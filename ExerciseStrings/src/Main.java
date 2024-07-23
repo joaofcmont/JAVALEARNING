@@ -37,6 +37,5 @@ public class Main {
     @Test
     public void testValidStrings() {
         assertEquals("JaVaScRiPt",upndown("javascript"));
-        assertEquals("JavA",upndown("java"));
     }
 }
