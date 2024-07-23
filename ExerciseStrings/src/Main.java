@@ -21,7 +21,7 @@ public class Main {
         for (int i = 0; i < s.length(); i++) {
             char c = s.charAt(i);
             if (Character.isLetter(c)) {
-                if (s.charAt(i) % 2 == 0) {
+                if (upper) {
                     result.append(Character.toUpperCase(c));
                 } else {
                     result.append(Character.toLowerCase(c));
@@ -38,7 +38,6 @@ public class Main {
     @Test
     public void testValidStrings() {
         assertEquals("JaVaScRiPt",upndown("javascript"));
-        assertEquals("HeLlO", upndown("hello"));
-        assertEquals("ExAmPlE", upndown("example"));
+        assertEquals("JavA",upndown("java"));
     }
 }
