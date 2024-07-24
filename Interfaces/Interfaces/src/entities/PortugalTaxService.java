@@ -1,8 +1,5 @@
 package entities;
 
-import interfaces.TaxService;
-
-public class PortugalTaxService implements TaxService {
 
     public double tax (double amount){
         if(amount<= 100){

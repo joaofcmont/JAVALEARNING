@@ -1,18 +1,14 @@
 package entities;
 
-import interfaces.TaxService;
-
 import java.time.Duration;
 
 public class RentalService {
 
     private double pricePerHour;
     private double pricePerDay;
-    private TaxService taxService;
 
     public RentalService(double pricePerHour, PortugalTaxService portugalTaxService, double pricePerDay) {
         this.pricePerHour = pricePerHour;
-        this.taxService = portugalTaxService;
         this.pricePerDay = pricePerDay;
     }
 
@@ -20,8 +16,6 @@ public class RentalService {
         return pricePerHour;
     }
 
-    public TaxService getPortugalTaxService() {
-        return taxService;
     }
 
     public double getPricePerDay() {
@@ -38,7 +32,6 @@ public class RentalService {
         }else{
             basicPayment = pricePerDay*Math.ceil(durationHours/24);
         }
-        double tax = taxService.tax(basicPayment);
 
         carRental.setInvoice(new Invoice(basicPayment,tax));
     }
