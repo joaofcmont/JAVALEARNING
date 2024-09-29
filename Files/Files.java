@@ -4,14 +4,13 @@ import java.util.Scanner;
 public class Files {
 
     public static void main(String[] args) {
-        String path= "/Users/joaomonteiro/test.java";
+        String path= "/Users/joaomonteiro/test.txt";
         BufferedReader bufferedReader = null;
         FileReader fileReader = null;
 
         try{
             fileReader = new FileReader(path);
             bufferedReader = new BufferedReader(fileReader);
-
             String line = bufferedReader.readLine();
 
             while(line != null){
