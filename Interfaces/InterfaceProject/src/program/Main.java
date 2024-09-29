@@ -19,6 +19,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         DateTimeFormatter sdf = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 
+
         System.out.println("Enter the data of the contract: ");
         System.out.println("Number: ");
         int numberContract = sc.nextInt();
@@ -30,12 +31,12 @@ public class Main {
         int numberPortions = sc.nextInt();
 
         Contract contract = new Contract(numberContract, valueContract, dateContract);
+        System.out.println(contract.getInstallmentList());
+
 
         ContractService service= new ContractService(new PaypalService());
 
-        service.processContract(contract,numberPortions);
 
-        System.out.println();
         System.out.println("PORTIONS: ");
         for(Installment i: contract.getInstallmentList()){
             System.out.println(i);

@@ -12,10 +12,12 @@ public class Main {
 
     }
 
-
-    public static String upndown(String s) throws IllegalArgumentException{
+    public static String upndown(String s) {
         StringBuilder result = new StringBuilder();
         boolean upper = true;
+
+
+
 
         for (int i = 0; i < s.length(); i++) {
             char c = s.charAt(i);
@@ -36,6 +38,7 @@ public class Main {
 
     @Test
     public void testValidStrings() {
+
         assertEquals("JaVaScRiPt",upndown("javascript"));
     }
 }
